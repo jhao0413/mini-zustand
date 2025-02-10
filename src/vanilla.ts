@@ -27,7 +27,7 @@ const createStoreImpl = (createState) => {
     // 判断nextState和state是否是同一个对象，如果不是则更新state
     if (!Object.is(nextState, state)) {
       const prevState = state;
-      console.log(replace, typeof nextState);
+
       // state = nextState;
       state =
         // 如果replace为true，则直接赋值给nextState
